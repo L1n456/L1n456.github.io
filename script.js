@@ -4,12 +4,11 @@ const rate = document.querySelector(".rate");
 const sub = document.querySelector(".sub");
 const unsub = document.querySelector(".unsub");
 
-let hold;
-
 //change the background of only one number when it is clicked
-nbrs.forEach(nbr => {
-    nbr.addEventListener('click', function onClick(event) {
-        hold = nbr;
+let hold;
+for (let i = 0; i < nbrs.length; i++) {
+    nbrs[i].addEventListener('click', function onClick(event) {
+        hold = nbrs[i];
         event.target.style.background = 'hsl(217, 12%, 63%)';
         event.target.style.color = 'hsl(0, 0%, 100%)'; 
         let x = 0; 
@@ -18,8 +17,8 @@ nbrs.forEach(nbr => {
             nbrs[x].style.background = 'hsla(214, 20%, 22%, 1)'; 
             x ++; 
         } 
-    });
-})
+    });    
+}
 
 //display the Thank you screen when submit is clicked
 btn.addEventListener('click', function onSubmit(e) {
