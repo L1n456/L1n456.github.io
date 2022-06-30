@@ -1,0 +1,144 @@
+body{
+    background-color: lightgray;
+}
+
+.container{
+    width: 70%;
+    margin: 5% 15%;
+    background-color:  white;
+    text-align: center; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+    padding: 2% 0;
+}
+
+.logo{
+    width: 10%;
+    margin-top: 10%;
+}
+
+h1,.top{
+   font-weight: 100;
+   color: hsl(0, 0%, 59%); 
+   margin: 2% 0;
+}
+
+span{
+    font-weight: 600;
+    color: hsl(209, 33%, 12%);
+}
+
+input[type=email]{
+   border-radius: 20px;
+   padding: 1% 7% 1% 3%;
+   border: 1px solid hsl(0, 0%, 59%);
+}
+
+input[type=email]:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: hsl(0, 0%, 59%);
+    font-size: 10px;
+}
+
+input[type=submit]{
+    color: white;
+    background-color: hsl(223, 87%, 63%);
+    border-radius: 20px;
+    border: transparent;
+    padding: 1% 3%;
+}
+
+.error{
+    font-size: 15px;
+    color: hsl(354, 100%, 66%);
+    margin-top: 1%;
+    margin-left: -15%;
+}
+
+.ID{
+    width: 45%;
+    margin-top: 2%;
+}
+
+.icons{
+  margin-top: 5%;
+}
+
+.bi{
+  border-radius: 50%;
+  border: 1px solid hsl(0, 0%, 59%);
+  padding: 1%;
+  margin: 1%;
+}
+
+.bi:hover{
+    color: white;
+    background-color: hsl(223, 87%, 63%);
+}
+
+.fb{
+  font-weight: 600;
+  font-size: 20px;
+  color: hsl(223, 87%, 63%);
+  border-radius: 50%;
+  padding: 0.6% 1.5%;
+  margin-top: 5%;
+}
+
+.bi-twitter,.bi-instagram{
+   color: hsl(223, 87%, 63%);
+}
+
+.down{
+    font-size: 10px;
+    color: hsl(0, 0%, 59%);
+    margin-top: 2%;
+}
+
+@media screen and (max-width: 375px) {
+    .logo{
+        width: 15%;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    .top{
+        font-size: 13px;
+    }
+
+    input[type=email]{
+        width: 70%;
+        margin: 5% 10%;
+        padding: 2% 5%;
+    }
+
+    input[type=submit]{
+        width: 80%;
+        margin: 3% 5%;
+        padding: 2% 20%;
+    }
+
+    .error{
+        position: absolute;
+        top: 29%;
+        left: 46%;
+        font-size: 11px;
+    }
+
+    .ID{
+        width: 90%;
+    }
+
+    .icons{
+        margin: 10% 0;
+    }
+
+    .fb{
+        font-size: 17px;
+        padding: 1% 3%;
+    }
+}
